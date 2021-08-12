@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>My First JavaScript Lesson</h2> 
+   <p id="demo">Let's Check This Out</p>
+   <button type="button" 
+   onclick='document.getElementById("demo").innerHTML ="Wow"'>
+ Click Me!
+   </button>
+  
+   <h2>My Second JavaScript Lesson</h2>
+   <p>Chaning HTML attribute Values</p>
+   <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+   <img id="myImage" src="pic_bulboff.gif" style="width: 100px;">
+   <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+   <h2>My Third JavaScript Lesson</h2>
+   <p id="dem">Changing the style of an HTML element</p>
+   <button type="button" onclick="document.getElementById('dem').style.fontSize='50px'">Click me</button>
+
+   <h2>My Fourth JavaScript Lesson</h2>
+   <p id="exe">Hiding element</p>
+   <button type="button" onclick="document.getElementById('exe').style.display='none'">Click me</button>
+
+   <h2>My Fifth JavaScript Lesson</h2>
+   <p id="exe"> Showing Hiding elements</p>
+   <button type="button" onclick="document.getElementById('exe').style.display='block'">Click me</button>
+
+   <h2>My Fifth JavaScript Lesson</h2>
+   <p>Expression Compute to Values</p>
+   <p id="sugar"></p>
+   <script>
+     document.getElementById("sugar").innerHTML = 5 * 10;
+   </script>
+   
+   <h2>My sixth JavaScript Lesson</h2>
+   <p>The best place to break a code line is after an operator or a comma.</p>
+   <p id="wild"></p>
+   <script>
+     Document.getElementById("wild").innerHTML = "Hello Dolly!";
+   </script>
+
+   <h2>My seventh JavaScript Lesson</h2>
+   <p id="under"></p>
+   <script>
+     let answer1 = "It's Yusrah";
+     let answer2 = "She is a 'girl'";
+     let answer3 = 'She is a very "Stubborn"';
+     document.getElementById("under").innerHTML = 
+     answer1 + "<br>" +
+     answer2 + "<br>" +
+     answer3;
+   </script>
+
+   <h2>Typeof operator</h2>
+   <p id="pronto"></p>
+   <script>
+     document.getElementById("pronto").innerHTML = 
+     typeof "" + "<br>" +
+     typeof "judge" + "<br>" +
+     typeof "john Doe" + "<br>" +
+     typeof 0 + "<br>" + 
+     typeof 314 + "<br>" +
+     typeof (3.14);
+   
+   </script>
+   <button onclick="document.getElementById('time').innerHTML = Date()">The Time is?</button>
+   <p id="time"></p>
+
+   <h2>comments are executed in a code</h2>
+   <p id="egun"></p>
+   <script>
+     let x;
+     let y;
+     x = 5;
+     y = 6;
+     // x = 6; i will not be executed
+     document.getElementById("egun").innerHTML = x + y;
+   </script>
+</body>
+</html>

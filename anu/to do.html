@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/todo.css">
+    <title>ANU'S CLASS</title>
+</head>
+<body>
+ <div class="parent-container">
+     <div class="content">
+         <span class="time">00:00:00</span>
+    <h2 class="greeting">GOOD MORNING</h2>
+    <span class="name">POPOOLA</span>
+    <button class="add-task" onclick="add_task()">Add-task</button>
+    <button  class="View-task" onclick="view_task()">View-task</button>
+     </div>
+
+ </div>
+ <div class="add-container">
+     <h2>Add Task</h2>
+     <span>Task</span>
+     <textarea type="text" name="" class="task"></textarea>
+     <button onclick="save_task()">Add Task</button>
+     <button onclick="close_add()">Close</button>
+ </div>
+ <div class="view-container">
+     <h2>All Tasks</h2>
+        <div class="tasks-container">
+            
+        </div>
+    <button onclick="close_view()">Close</button>
+ </div>
+</body>
+<script src="./todo.js"></script>
+</html>

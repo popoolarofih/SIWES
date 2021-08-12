@@ -1,0 +1,26 @@
+* {
+    padding: 10px;
+    margin: auto;
+}
+body{
+    background-color:white;
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+.raphael{
+    display: block;
+}
+.text{
+    text-align: center;
+}
+.second{
+    padding: 20px;   
+}
+.joke{
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: navy;
+}
+

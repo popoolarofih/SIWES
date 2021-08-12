@@ -1,0 +1,24 @@
+* {
+    padding: 2px;
+    margin: auto;
+}
+body {
+    background-color:rgb(250, 243, 243);
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.logo {
+    background-color: rgb(250, 243, 243);
+    width: 100px;
+    margin: -15px;
+}
+.body {
+    padding: 200px;
+    text-align: center;
+    margin: 50px;
+    color: rgb(236, 182, 45);
+
+    
+}

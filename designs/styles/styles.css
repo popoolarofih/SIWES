@@ -1,0 +1,24 @@
+*{padding: 2;
+    margin:auto;
+
+}
+body{
+    background-color:#28434A;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size:25px;
+    color: antiquewhite;
+    text-align:center;
+    position: relative;
+}
+object {
+    color: beige;
+}
+.links {
+    padding:20px;
+}
+.image {
+    padding:-20px;
+}

@@ -1,0 +1,18 @@
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(238, 238, 5);
+    overflow: hidden;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center ;
+}
+.solo {
+    text-align:left;
+}
+.img {
+    padding: 100px;
+}
+.text {
+    padding: 120px;
+}

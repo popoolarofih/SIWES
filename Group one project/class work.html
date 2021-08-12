@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        background-image: url("groot.jpg");
+        font-size: 80px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .esther{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+    }
+    .head {
+        font-size: 15px;
+        color: rgb(228, 224, 13);
+        text-align: left;
+    }
+</style>
+<body>
+    <div class="esther">
+        <h5 style="color:rgb(228, 224, 13);">SIGN-UP</h5>
+        <div class="head">
+            <section>
+                    <div class="head">
+                    <p>Fullname</p>
+                    <input type="text" id="Fullname" name="" placeholder="Fullname">
+                    <p>Username</p>
+                    <input type="text" id="Username" name="" placeholder="Username">
+                    <p>Date of Birth</p>
+                    <input type="date" id="DOB" name="" placeholder="Date of Birth">
+                    <p>Password</p>
+                    <input type="password" id="password" name="" placeholder="password">
+                    <p>Confirm_Password</p>
+                    <input type="password" id="passw" name="" placeholder="Confirm_Password">
+                    <p>email</p>
+                    <input type="email" id="email" name="" placeholder="email">
+                    <p>Phone_Number</p>       
+                    <input type="number" id="number" name="" placeholder="Phone_Number">
+                    <p>Age</p>              
+                    <input type="number" id="age" name="" placeholder="Age">
+                    <p>Gender</p>             
+                    <input type="text" id="gender" name="" placeholder="Gender">
+                    <p>Jamb Reg</p>
+                    <input type="number" id="Reg" name="" placeholder="Jamb Reg">
+                    <p>Jamb Score</p>
+                    <input type="number" id="Score" name="" placeholder="Jamb Score">
+                    <P>O Level Result</P>
+                    <input type="text" id="result" name="" placeholder="O Level Result"><br>
+                    <button type="button" id="button">Sign-up</button>
+                </div>
+            </section>
+        </div>
+</body>
+<script>
+    let full = document.getElementById("Fullname");
+    let user = document.getElementById("Username");
+    let pass = document.getElementById("password");
+    let word = document.getElementById("passw");
+    let mail = document.getElementById("email");
+    let numberx = document.getElementById("number");
+    let Age = document.getElementById("age");
+    let Gender = document.getElementById("gender");
+    let btn = document.getElementById("button");
+    let jambscore = document.getElementById("Score");
+    let level = document.getElementById("result");
+
+
+    btn.addEventListener("click", raphael);
+    function raphael(){
+        alert("You Have Succefully Sign-up To My Web Page!!!!!")
+        let Fullname = full.Value;
+        let Username = user.Value;
+        let password = pass.Value;
+        let passw = word.Value;
+        let email = mail.Value;
+        let number = numberx.value;
+        let age = Age.value;
+        let gender = Gender.value;
+        let button =btn.value;
+        let Score = jambscore.value;
+        let result = level.value;
+        }
+    
+        
+</script>
+</html>
