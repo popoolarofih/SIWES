@@ -1,0 +1,121 @@
+*{
+    margin: auto;
+    padding: 0;
+    text-decoration: none;
+}
+ 
+body{
+    background-image: url('./healthy-food-assortment-buddha-bowl-260nw-1319947274.jpg');
+    background-size: cover;
+}
+.pat{
+    display: block;
+    width: 100px;
+    padding: 40px;
+    margin-bottom: 10px;
+    margin: 80px 200px;
+}
+
+.You{
+    background-color:green;
+    color:ivory;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.You:hover{
+    background-color: burlywood;
+    color: orangered;
+}
+
+#location{
+    padding: 10px;
+}
+.super{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+.account{
+    display: none;
+    width: 350px;
+    text-align: center;
+}
+.butt-on{
+    padding: 7px;
+    color: orangered;
+    background-color: green;
+    border-color: orangered;
+    margin-top: 10px;
+  }
+ 
+
+.pay{
+    background-color: rgba(255, 68, 0, 0.726);
+    display: block;
+    width: 60%;
+    text-align: center;
+    height: 60vh;
+    padding: 100px;
+    margin-bottom: 10px;
+    margin: 80px 300px; 
+    border-radius: 7px;
+    box-sizing: border-box; 
+}
+
+.addform{
+    width: 70%;
+    height: 50vh;
+    max-width: 700px;
+    background-color: rgba(231, 162, 71, 0.904);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 3%;
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
+    margin-top: 70px;
+}
+.way{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-align: center;  
+}
+.time{
+    margin-top: 20px;
+    width: 70%;
+    height: 10vh;
+    max-width: 700px;
+    background-color: rgba(5, 78, 14, 0.623);
+    border-radius: 5px;
+    border-color: white;
+    border: 1.7px solid transparent;
+    box-sizing: border-box; 
+}
+.num{
+    text-align: left;
+    font-size: 15px;
+    font-family: cursive;
+   
+}
+.del{
+    text-align: left;
+    font-size: 15px;
+    font-family: cursive;
+    padding-top: 10px;
+}
+#got{
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 0;
+    background-color: orangered;
+    color: green;
+    
+}
+#got:hover{
+    background-color: green;
+    color: orangered;
+
+}

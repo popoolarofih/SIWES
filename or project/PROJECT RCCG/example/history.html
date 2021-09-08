@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./examplecss/history.css">
+    <title>History</title>
+</head>
+<body>
+    <div class="container">
+       <h2 class="contai">USER HISTORY</h2>
+       <div class="contain">
+       <p class="na">Name: </p>
+       <p class="ma">Email: </p>
+       <p class="ad">Address: </p>
+       <p class="ci">City: </p>
+       <p class="st">State: </p>
+       <p class="box">P.O.BOX: </p>
+       <p class="cn">Card Name: </p>
+         
+       <p class="pro">No of items purchased: </p>
+       </div>
+     </div>
+
+</body>
+<script>
+    let fname=document.querySelector('.na'),
+    email = document.querySelector('.ma'),
+    adr = document.querySelector('.ad'),
+    city = document.querySelector('.ci'),
+    state = document.querySelector('.st'),
+    zip = document.querySelector('.box'),
+    cname = document.querySelector('.cn'),
+    
+    cart = document.querySelector('.pro');
+    let user_name=JSON.parse(localStorage.getItem('user-name'));
+    console.log(user_name);
+    fname.textContent+=user_name.fname;
+    email.textContent+=user_name.email;
+    adr.textContent+=user_name.adr;
+    city.textContent+=user_name.city;
+    state.textContent+=user_name.state;
+    zip.textContent+=user_name.zip;
+    cname.textContent+=user_name.cname;
+    
+    let user_cart = JSON.parse(localStorage.getItem('cart'));
+    // console.log(user_cart);
+    cart.textContent+=Object.keys(user_cart).length;
+
+</script>
+</html>

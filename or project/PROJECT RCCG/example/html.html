@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./examplecss/css.css">
+    <title>Billing Address & Payment</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form name="forms" action="/action_page.php" onsubmit="return validation()">
+              <div class="row">
+                <div class="col-50">
+                  <h3 class="bill">Billing Address</h3>
+                  <label for="fname"><img width="20px" src="./co.png">Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Popoola Rofih " required>
+                  <label for="email"> Email</label>
+                  <input type="text" id="email" name="email" placeholder="groupone@gmail.com" required>
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="IBADAN" required>
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="OYO">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">P.O.BOX</label>
+                      <input type="text" id="zip" name="zip" placeholder="P.O.BOX">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50">
+                  <a href="../chart/cart.html"><span class="chart">Goto cart</span></a>
+                  <h3 class="bill">Payment Method</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <h1 class="fa " style="color:navy;">Visa</h1>
+                    <h1 class="fa " style="color:blue;">Amex</h1>
+                    <h1 class="fa " style="color:red;">Mastercard</h1>
+                    <h1 class="fa" style="color:orange;">Discover</h1>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Name On Card">
+                  <label for="ccnum">Account number</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="Credit Card Number">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="Exp Month">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="Exp year">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="radio" checked="checked" name="sameadr"> I want to pay on delivery
+              </label>
+            </form>
+            <a href="../thanks.html"><button id="btn" type="submit">Click To CheckOut</button></a>
+          </div>
+        </div>
+      </div>
+      
+    
+</body>
+<script src="./js.js"></script>
+</html>

@@ -1,0 +1,30 @@
+body{
+    font: bolder;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(8, 107, 21);
+    transition: all 1s;
+}
+
+.container {
+  text-align: center;
+  padding: 5px 20px 15px 20px;
+  border: 3px solid orangered;
+  border-radius: 3px;
+}
+.container:hover{
+    background-color: burlywood;
+}
+.contain{
+    text-align: left; 
+    font-size: 18px;
+    color: burlywood;
+}
+.contai{
+    text-align: center;
+    padding: 5px 20px 15px 20px;
+    border: 3px solid white;
+    border-radius: 3px;
+    color: orangered;
+    font-size: 30px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./STLE/thanks.css">
+    <title>Thanks</title>
+</head>
+<body>
+
+            <div class="addform">
+                <h2 class="You">THANKS YOU FOR YOUR PATRONAGE</h2>
+                <h3 class="dear">Dear  </h3>
+                <h4 class="way">Sit back and relax, Your Order's on its way!</h4>
+                <div class="time">
+                <p class="del">Delivery Time is 30mins max</p>  
+                <p class="pro">No of items purchased: </p> 
+                </div>
+                <a href="./THEHTML.html"><button id="btn">GOT IT</button></a>
+            </div>
+        
+</body>
+<script>
+    let fname = document.querySelector('.dear'),
+    cart = document.querySelector('.pro');
+    
+    let user_name=JSON.parse(localStorage.getItem('user-name'));
+    console.log(user_name);
+    fname.textContent+=user_name.fname;
+    
+    let user_cart = JSON.parse(localStorage.getItem('cart'));
+    // console.log(user_cart);
+    cart.textContent+=Object.keys(user_cart).length;
+</script>
+</html>

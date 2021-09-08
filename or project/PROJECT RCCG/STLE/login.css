@@ -1,0 +1,108 @@
+*{
+    padding: 2px;
+    margin: auto;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    overflow: hidden;
+    background-color: burlywood;
+}
+.right{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.sright{
+    
+    margin-top: 100px;
+}
+.left{
+    margin-right: 10px;
+    color: orangered;
+    font-size: 20px;
+}
+.llleft{
+    margin-right: 10px;
+    margin-top: 10px;
+    color: orangered;
+    font-size: 20px;
+    background-color: none;
+    text-decoration: underline;
+    font-style: italic;
+}
+.top{
+    margin-left: 25px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 60px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.ttop{
+    text-align: center;
+    font-size: 60px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: green;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#pass{
+    color: orangered;
+    width: 300px;
+    text-align: center;   
+}
+#passw{
+    color: orangered;
+    width: 300px;
+    text-align: center;
+   
+}
+#fname{
+    color: orangered;
+    width: 300px;
+    text-align: center; 
+}
+#name{
+    color: orangered;
+    width: 300px;
+    text-align: center;
+}
+#email{
+    color: orangered;
+    width: 300px;
+    text-align: center;   
+}
+#confirm{
+    color: orangered;
+    width: 300px;
+    text-align: center;
+}
+#go{
+    background-color: orangered;
+    border: green;
+    font-weight: bolder;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: green;
+    right: 70%;
+    bottom: 20%;
+    display: block;
+    border-radius: 20px;
+}
+.lleft{
+    
+    color:green;
+    font-size: 20px;
+}
+#lgo{
+    background-color: green;
+    color: white;
+    width: 100px;
+    margin-top: 20px;
+    right: 70%;
+    bottom: 20%;
+    display: block;
+}
