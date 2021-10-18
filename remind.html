@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page </title>
+</head>
+<style>
+    body{
+    margin: 0px;
+    text-decoration: none;
+    background:white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body:hover{
+    background: linear-gradient(yellow, green);
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+.box1{
+    
+    width: 530px;
+    height: 500px;
+    background-image: url('./36-364995_gold-dollar-coin-dollar-gold-coin-png-transparent.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -100%;
+    left: 30%;
+    animation: anim 3s forwards, anim2 3s forwards 3s ;
+    margin-left: 150px;
+    
+}
+.box1:after{
+    content: '';
+    position: absolute;
+    width: 550px;
+    height: 620px;
+    background-size: 500px;
+    left: 0px;
+    z-index: -1;
+    bottom: 0%;
+    margin-left: 650px;
+    background-image: url('./landingpagetwo.1c5425f6.jpg');
+    background-repeat: no-repeat;
+   
+    
+
+}
+@keyframes anim{
+    from{ 
+        bottom: -100%;
+    }
+    to{
+        bottom: 0%;
+    }
+}
+@keyframes anim2{
+    from{
+        left: 30%;
+        width: 530px;
+    }
+    to{
+        width: 0px;
+        left: 50px;
+        
+
+    }
+}
+.box2{
+    width: auto;
+    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: 10em;
+    font-size: 500;
+    line-height: 130px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    overflow: hidden;
+}
+.text{
+    position: relative;
+    left: -100%;
+    animation: anim3 2s forwards 3s;
+    font-size: 55px;
+    margin-top: 0px;
+    color:  rgb(7, 110, 76);
+
+}
+
+@keyframes anim3{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+.box3{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    animation: anim4 2s forwards 2.5s;
+}
+.logo{
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.logo img{
+    width: 100px;
+}
+.menu{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: rgb(246, 250, 9);
+    letter-spacing: 2px;
+    margin-right: 150px;
+    margin-top: 20px;
+    font-weight: bold;
+    float: right;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 100px;
+}
+/* .menu ul:hover{
+    color: rgb(7, 110, 76);
+    font-weight: bolder;
+} */
+.menu .ho:hover{
+    color: rgb(7, 110, 76);
+    font-weight: bolder;
+}
+.menu .ser:hover{
+    color: rgb(7, 110, 76);
+    font-weight: bolder;
+}
+.menu .ab:hover{
+    color: rgb(7, 110, 76);
+    font-weight: bolder;
+}
+.menu .hel:hover{
+    color: rgb(7, 110, 76);
+    font-weight: bolder;
+}
+button{
+    color: rgb(246, 250, 9);
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid rgb(7, 110, 76);
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 100px;
+    font-weight: bolder;
+    
+}
+button:hover{
+    color: rgb(223, 209, 17); 
+    border: 2px solid rgb(246, 250, 9);
+    background: rgb(2, 68, 59);
+}
+@keyframes anim4{
+    from{
+        top: -100%;
+    }
+    to{
+        top: 0%;
+    }
+}
+.bubbles img{
+    width: 50px;
+    animation:bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay:2s ;
+    width: 20px;
+}
+.bubbles img:nth-child(2){
+    animation-delay:1s ;
+    width: 35px;
+}
+.bubbles img:nth-child(3){
+    animation-delay:3s ;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay:6s ;
+    width: 20px;
+}
+.bubbles img:nth-child(5){
+    animation-delay:9s ;
+    width: 25px;
+}
+.bubbles img:nth-child(6){
+    animation-delay:7s ;
+    width: 23px;
+}
+.bubbles img:nth-child(7){
+    animation-delay:5s ;
+    width: 30px;
+}
+.bubbles img:nth-child(8){
+    animation-delay:9s ;
+    width: 38px;
+}
+.bubbles img:nth-child(9){
+    animation-delay:5s ;
+    width: 50px;
+}
+.bubbles img:nth-child(10){
+    animation-delay:7s ;
+    width: 40px;
+}
+</style>
+<body>
+    <!-- <div class="main"></div> -->
+<div class="box1"></div>
+<div class="box2">
+    <div class="text">
+      INCOME AND EXPENSE TRACKING<br> MANAGMENT ASSISTANT<br>
+    </div>
+    <!-- <a href="../expense.php"><button type="button">INDIVIDUAL</button></a> -->
+    <a href="../sign.php"><button type="button">ORGANISATION</button></a>
+</div>
+<div class="box3">
+    <div class="container">
+        <div class="logo">
+            <img src="./app_icon_200.png" alt="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="ho">HOME</li>
+                <li class="ser">SERVICES</li>
+                <li class="ab">ABOUT</li>
+                <li class="hel">HELP</li>
+                
+            </ul>
+        </div>
+       
+    </div>
+    <div class="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+        <img src="./1027961.png" alt="bubbles">
+
+    </div>
+</body>
+</html>
