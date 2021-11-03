@@ -1,0 +1,122 @@
+   /* Googlefont Poppins CDN Link */
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  body {
+    background-color: rgb(7, 167, 60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    color: rgb(7, 167, 60);;
+  }
+  .add{
+      background: rgba(255, 255, 255, 0.884);
+      display: block;
+      padding: 90px;
+      margin: 20px;
+      border-radius: 10px;
+  }
+  .add .alloc{
+      margin-bottom: 10px;
+      text-align: center;
+      /* margin-left: 10px; */
+      font-size: 20px;
+      font-weight: bolder;
+  }
+  .add .bu{
+    margin-top: 35px;
+    margin-left: 35px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.add button{
+    margin-top: 10px;
+    border: 1px solid rgb(7, 167, 60);
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 60px;
+    font-size: 20px;
+    color: rgb(7, 167, 60);
+    font-weight: bolder;
+    
+}
+.add button:hover{
+    padding: 20px;
+    background:rgb(7, 167, 60);
+    color: white;
+    margin-left: 55px;
+    border: 1px solid rgb(250, 250, 250);
+}
+.minus{
+      background: rgb(255, 255, 255);
+      display: none;
+      padding: 90px;
+      margin: 20px;
+      border-radius: 10px;
+      margin-top: -350px;
+      position: absolute;
+      font-size: 20px;
+}
+.message{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    
+
+}
+ #budgetname{
+    padding: 10px;
+    border: 1px solid rgb(7, 167, 60);
+    border-radius: 12px;
+    
+}
+#text{
+    padding: 10px;
+    border: 1px solid rgb(7, 167, 60);
+    border-radius: 12px;
+}
+#amount{
+    padding: 10px;
+    border: 1px solid rgb(7, 167, 60);
+    border-radius: 12px;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bolder;
+    border: 1px solid rgb(7, 167, 60);
+    background: transparent;
+    color: rgb(7, 167, 60);
+}
+.btn:hover{
+    color: white;
+    background:rgb(7, 167, 60);
+    border: 1px solid rgb(239, 243, 241);
+}
+.bt{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bolder;
+    border: 1px solid rgb(230, 225, 225);
+    background: transparent;
+    color: rgb(236, 245, 239);
+}
+ .bt:hover{
+    color: white;
+    background:rgb(214, 218, 2);
+    border: 1px solid rgb(243, 243, 239);
+}
