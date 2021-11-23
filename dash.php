@@ -1,6 +1,5 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "", "expenses") or die ("Error : " . mysqli_error($conn));
-
 function getBalance(){
     global $conn;
     $amm = array();
@@ -173,7 +172,7 @@ echo "<h2>".$tttt."</h2>";
               <span class="text">Up till today</span>
             </div>
             <div class="balance">
-              <h2>Balance: #<?php echo getBalance(); ?></h2> 
+        <h2>Balance: #<?php echo getBalance(); ?></h2> 
         <span>Income: #<?php echo getIncome(); ?></span>
         <span>Expense: #<?php echo getExpenses(); ?></span>
             </div>

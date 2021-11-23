@@ -5,12 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
   }
   .sidebar{
     position: fixed;
     height: 100%;
     width: 240px;
-    background: #23015a;
+    background: rgb(189, 162, 8);
     transition: all 0.5s ease;
   }
   .sidebar.active{
@@ -29,9 +30,10 @@
     text-align: center
   }
   .sidebar .logo-details .logo_name{
-    color: #fff;
-    font-size: 24px;
+    color: #0879bb;
+    font-size: 20px;
     font-weight: 500;
+    overflow: hidden;
   }
   .sidebar .nav-links{
     margin-top: 10px;
@@ -50,10 +52,10 @@
     transition: all 0.4s ease;
   }
   .sidebar .nav-links li a.active{
-    background: #6b025d;
+    background: #0879bb;
   }
   .sidebar .nav-links li a:hover{
-    background: #6b025d;
+    background: #0879bb;
   }
   .sidebar .nav-links li i{
     min-width: 60px;
@@ -90,15 +92,15 @@
     height: 80px;
     /* background: #fff; */
     display: flex;
-    color: white;
-    background-color: #23015a;;
+    color: #0879bb;
+    background-color: rgb(189, 162, 8);
     align-items: center;
     position: fixed;
     width: calc(100% - 240px);
     left: 240px;
     z-index: 100;
     padding: 0 20px;
-    box-shadow: 0 1px 1px #23015a;;
+    box-shadow: 0 1px 1px rgb(189, 162, 8);
     transition: all 0.5s ease;
   }
   .sidebar.active ~ .home-section nav{
@@ -112,7 +114,7 @@
     font-weight: 500;
   }
   nav{
-    background-color: #23015a;;
+    background-color: rgb(189, 162, 8);
   }
   nav .sidebar-button i{
     font-size: 35px;
@@ -125,21 +127,11 @@
     width: 100%;
     margin: 0 20px;
   }
-  nav .search-box input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    background: #F5F6FA;
-    border: 2px solid #EFEEF1;
-    border-radius: 6px;
-    display: block;
-    font-size: 18px;
-    padding: 0 15px;
-  }
+  
   .search-box span{
    margin: 20px;
    margin-left: -10px;
-   color: #081D45;
+   color: rgb(189, 162, 8);
   }
   nav .search-box .bx-search{
     position: absolute;
@@ -159,8 +151,8 @@
   .home-section nav .profile-details{
     display: flex;
     align-items: center;
-    background: #F5F6FA;
-    border: 2px solid #EFEEF1;
+    background: #0879bb;
+    border: 2px solid #0879bb;
     border-radius: 6px;
     height: 50px;
     min-width: 190px;
@@ -175,13 +167,13 @@
   nav .profile-details .admin_name{
     font-size: 15px;
     font-weight: 500;
-    color: #23015a;;
+    color: rgb(189, 162, 8);
     margin: 0 10px;
     white-space: nowrap;
   }
   nav .profile-details i{
     font-size: 25px;
-    color: #23015a;;
+    color: rgb(189, 162, 8);
   }
   .home-section .home-content{
     position: relative;
@@ -200,14 +192,14 @@
     align-items: center;
     justify-content: center;
     width: calc(100% / 1 - 30px);
-    background:  #23015a;
-    color: #fff;
+    background:  rgb(189, 162, 8);
+    color: #0879bb;
     padding: 15px 14px;
     border-radius: 12px;
-    box-shadow: 0 5px 10px #23015a;;
+    box-shadow: 0 5px 10px rgb(189, 162, 8);
   }
   .overview-boxes .box h2{
-    color: rgb(255, 255, 255);
+    color: #0879bb;
   }
   .overview-boxes .box .balance{
     margin-top: 20px;
@@ -227,61 +219,8 @@
     margin-top: -6px;
     font-weight: 500;
   }
-  /* .home-content .box .indicator{
-    display: flex;
-    align-items: center;
-  }
-  .home-content .box .indicator i{
-    height: 20px;
-    width: 20px;
-    background: #8FDACB;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 20px;
-    margin-right: 5px;
-  }
-  .box .indicator i.down{
-    background: #e87d88;
-  }
-  .home-content .box .indicator .text{
-    font-size: 12px;
-  }
-  .home-content .box .cart{
-    display: inline-block;
-    font-size: 32px;
-    height: 50px;
-    width: 50px;
-    background: #cce5ff;
-    line-height: 50px;
-    text-align: center;
-    color: #66b0ff;
-    border-radius: 12px;
-    margin: -15px 0 0 6px;
-  } */
-  /* .home-content .box .cart.two{
-     color: #2BD47D;
-     background: #C0F2D8;
-   }
-  .home-content .box .cart.three{
-     color: #ffc233;
-     background: #ffe8b3;
-   }
-  .home-content .box .cart.four{
-     color: #e05260;
-     background: #f7d4d7;
-   }
-  .home-content .total-order{
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .home-content .sales-boxes{
-    display: flex;
-    justify-content: space-between;
-    /* padding: 0 20px; */
-  } */
-  
+
+
   /* left box */
   .sales-boxes .recent-sales{
     /* width: 1000px; */
@@ -305,14 +244,14 @@
 }
 
   .recent-sales th{
-      color:white;
+      color:#0879bb;
       font-size: 20px;
       padding: 20px;
-      background-color: #23015a;
+      background-color: rgb(189, 162, 8);
       width: 1000px;
   }
   .recent-sales td{
-      color:#23015a;
+      color:#0879bb;
       font-size: 15px; 
       width: 100px; 
       padding: 8px;
@@ -344,11 +283,11 @@
   color:white;
       font-size: 20px;
       padding: 20px;
-      background-color: #23015a;
+      background-color: rgb(189, 162, 8);
       width: 1000px;
 }
 .falling td{
-  color:#23015a;
+  color:#0879bb;
   font-size: 15px; 
   width: 100px; 
   padding: 8px;

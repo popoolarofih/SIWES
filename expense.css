@@ -20,7 +20,9 @@ body {
   font-family: 'Lato', sans-serif;
   cursor: pointer;
   
+  
 }
+
 .navi {
   margin-bottom: 20px;
   padding: 10px;
@@ -45,16 +47,22 @@ body {
   margin-top: 20px;
   font-weight: bolder;
   float: right;
- 
+  
 }
 .menu button{
+  border: none;
   border-radius: 20px;
-  border: 4px solid rgb(4, 76, 185);
-  background: transparent;
-  color: rgb(4, 76, 185);
+  background: rgb(4, 76, 185);
+  color: goldenrod;
+  cursor: pointer;
   font-weight: bolder;
   margin-left: 15px;
+  
   padding: 10px;
+}
+.menu button:hover{
+  transform: translateY(-12px);
+  transition: 1s;
 }
 .menu ul{
   list-style: none;
@@ -63,15 +71,15 @@ body {
   display: inline-block;
   margin-left: 100px;
 }
-.menu button:hover{
-  color: rgb(248, 248, 248);
+/* .menu button:hover{
+  color: goldenrod;
   background:rgba(4, 76, 185, 0.815);
-}
+} */
 .b{
   margin-left: -180px;
 }
 .b #balance{
-  color: rgb(4, 76, 185);
+  color: goldenrod;
 }
 /* .top{
     color: rgb(4, 76, 185);
@@ -80,25 +88,25 @@ body {
     font-size: 35px;
     background-color: palegreen;
 } */
-.his{
+/* .his{
   color: rgb(4, 76, 185);
-}
+} */
 /* .bal{
     color: rgb(4, 76, 185);
 } */
 .income{
-    color: rgb(246, 248, 250);
+    color: goldenrod;
     font-size: 25px;
 }
 .expense{
-    color: rgb(255, 255, 255);
+    color: goldenrod;
     font-size: 25px;
 }
-.trans{
+/* .trans{
   color: rgb(4, 76, 185);
-}
+} */
 .form-control{
-    color: rgb(254, 254, 255);
+    color: goldenrod;
     font-weight: bolder;
     
 }
@@ -139,8 +147,8 @@ h4 {
   height: 80px;
   border-radius: 50%;
 }
-.calendar .calendar-body .month-name{
-  color: rgb(255, 255, 255);
+.calendar-body .month-name{
+  color: goldenrod;
   background: rgb(4, 76, 185);
   width: 100%;
   font-size: 1.6em;
@@ -175,7 +183,38 @@ h4 {
   border: 4px solid rgb(2, 11, 141) ;
   
 }
-.calendar .calendar-body .year{
+.message2{
+  background: rgb(4, 76, 185);
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 4px solid rgb(2, 11, 141) ;
+  
+}
+.message3{
+  background: rgb(4, 76, 185);
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 4px solid rgb(2, 11, 141) ;
+  
+}
+.message4{
+  background: rgb(4, 76, 185);
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 4px solid rgb(2, 11, 141) ;
+  
+}
+
+.year{
   color: rgb(7, 55, 212);
   font-size: 25px;
   font-weight: bolder;
@@ -188,7 +227,7 @@ h4 {
   flex-direction: column;
   background: rgba(255, 255, 255, 0.041);
   backdrop-filter: blur(15px);
-  border-bottom: 6px solid rgb(4, 76, 185);
+  border-bottom: 6px solid goldenrod;
   border-right: 1px solid rgba(255, 255, 255, 0.055);
   border-radius: 8px;
   box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
@@ -220,11 +259,11 @@ h4 {
 }
 
 .money.plus {
-  color: #f9faf9;
+  color: goldenrod;
 }
 
 .money.minus {
-  color: #d40808;
+  color: goldenrod;
 }
 
 label {
@@ -239,7 +278,7 @@ input[type='number'] {
   display: block;
   font-size: 16px;
   font-weight: bold;
-  color: rgb(4, 76, 185);
+  color: goldenrod;
   padding: 10px;
   width: 100%;
 }
@@ -248,7 +287,7 @@ input[type='number'] {
   cursor: pointer;
   background-color:rgb(4, 76, 185);
   box-shadow: var(--box-shadow);
-  color: rgb(255, 255, 255);
+  color: goldenrod;
   display: block;
   font-size: 20px;
   margin: 10px 0 30px;
@@ -261,8 +300,8 @@ input[type='number'] {
 }
 .btn:hover{
   width: 365px;
-  color:  rgb(255, 255, 255);
-  background-color:rgba(4, 76, 185, 0.582);
+  color:  goldenrod;
+  background-color:rgb(4, 34, 80);
   border: 2px solid rgb(4, 76, 185);
 }
 
@@ -277,7 +316,7 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: goldenrod;
   box-shadow: var(--box-shadow);
   color: #333;
   display: flex;
@@ -316,61 +355,13 @@ input[type='number'] {
 }
 
 .slidetext{
-  color: #ffffff;
+  color: goldenrod;
   font-style: italic;
   font-size: 25px;
   background: rgb(4, 76, 185);
   padding: 20px;
 
 }
-
-
-/* body {
-  margin-top: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200vh;
-  background: #0081cb33;
-  font-family: "Montserrat", sans-serif; 
-} */
-/* .ball {
-  position: relative;
-  bottom: 100px;
-  left: calc(100% - 70px);
-  width: 80px;
-  height: 80px;
-  background: #ff0022;
-  border-radius: 50%;
-  animation: ball-move 4s ease-in-out 2s infinite alternate;
-}
-.ball::after {
-  position: absolute;
-  content: '';
-  top: 50px;
-  right: 10px;
-  width: 10px;
-  height: 10px;
-  background: #FFF;
-  border-radius: 50%;
-}
-.barr {
-  width: 200px;
-  height: 25px;
-  background: rgba(255, 255, 255, 0);
-  border-radius: 30px;
-  transform: rotate(-15deg);
-  filter: drop-shadow(20px 10px 4px gray);
-  animation: up-down 4s ease-in-out 2s infinite alternate;
-} */
-/* @keyframes up-down {
-  from {transform: rotate(-15deg);}
-  to {transform: rotate(15deg);}
-}
-@keyframes ball-move {
-  from {left: calc(100% - 70px); transform: rotate(360deg);}
-  to {left: calc(0% - 35px); transform: rotate(0deg);}
-} */
 
 .upload{
  padding: 20px;
@@ -382,7 +373,7 @@ input[type='number'] {
   display: block;
 }
 .upload .file{
-  color: rgb(243, 232, 232);
+  color: goldenrod;
   border: 2px solid rgb(4, 76, 185);
   border-radius: 3px;
 }
@@ -398,17 +389,46 @@ input[type='number'] {
 
 .dark-btn{
   position: absolute ;
-  padding: 14px 50px;
+  padding: 12px 10px;
   background-color: #121212;
   border: none;
   border-radius: 20px;
   color: #fff;
   top: 0;
+  margin-top: 10px;
 }
 
 .dark-mode {
   background-color: black;
   color: white;
 }
-
-
+.colors{
+  margin-left: 450px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: none;
+}
+.colors .purple{
+  color: purple;
+  /* border: 5px solid purple; */
+}
+.colors .pink{
+  color: rgb(233, 17, 53);
+  /* border: 5px solid rgb(233, 17, 53); */
+}
+.colors .green{
+  color: rgb(4, 99, 33);
+  /* border: 5px solid rgb(4, 99, 33); */
+}
+.colors .red{
+  /* border: 5px solid red; */
+  color: red;
+}
+.colors .aqua{
+  color: aqua;
+  /* border: 5px solid  yellow; */
+}
+.colors .close{
+  color: gold;
+}
