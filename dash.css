@@ -11,16 +11,22 @@
     position: fixed;
     height: 100%;
     width: 240px;
-    background: rgb(189, 162, 8);
+    background: rgb(7, 189, 119);
     transition: all 0.5s ease;
   }
   .sidebar.active{
     width: 60px;
   }
+  span{
+    color:#be0303;
+  }
   .sidebar .logo-details{
     height: 95px;
     display: flex;
     align-items: center;
+  }
+  .profile-details span{
+    color: white;
   }
   .sidebar .logo-details i{
     font-size: 28px;
@@ -30,7 +36,7 @@
     text-align: center
   }
   .sidebar .logo-details .logo_name{
-    color: #0879bb;
+    color: #fffafa;
     font-size: 20px;
     font-weight: 500;
     overflow: hidden;
@@ -52,10 +58,10 @@
     transition: all 0.4s ease;
   }
   .sidebar .nav-links li a.active{
-    background: #0879bb;
+    background: #d10505;
   }
   .sidebar .nav-links li a:hover{
-    background: #0879bb;
+    background: #d10505;
   }
   .sidebar .nav-links li i{
     min-width: 60px;
@@ -92,15 +98,15 @@
     height: 80px;
     /* background: #fff; */
     display: flex;
-    color: #0879bb;
-    background-color: rgb(189, 162, 8);
+    color: #ffffff;
+    background-color: rgb(7, 189, 119);
     align-items: center;
     position: fixed;
     width: calc(100% - 240px);
     left: 240px;
     z-index: 100;
     padding: 0 20px;
-    box-shadow: 0 1px 1px rgb(189, 162, 8);
+    box-shadow: 0 1px 1px rgb(7, 189, 119);
     transition: all 0.5s ease;
   }
   .sidebar.active ~ .home-section nav{
@@ -114,7 +120,7 @@
     font-weight: 500;
   }
   nav{
-    background-color: rgb(189, 162, 8);
+    background-color: rgb(7, 189, 119);
   }
   nav .sidebar-button i{
     font-size: 35px;
@@ -137,7 +143,7 @@
     position: absolute;
     height: 40px;
     width: 40px;
-    background: #2697FF;
+    background: #ffffff;
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
@@ -151,8 +157,8 @@
   .home-section nav .profile-details{
     display: flex;
     align-items: center;
-    background: #0879bb;
-    border: 2px solid #0879bb;
+    background: rgb(224, 4, 4);
+    /* border: 2px solid rgb(7, 189, 119); */
     border-radius: 6px;
     height: 50px;
     min-width: 190px;
@@ -167,13 +173,15 @@
   nav .profile-details .admin_name{
     font-size: 15px;
     font-weight: 500;
-    color: rgb(189, 162, 8);
+    color: rgb(7, 189, 119);
     margin: 0 10px;
-    white-space: nowrap;
+  }
+  .nav .profile-details p{
+    color: rgb(7, 189, 119);
   }
   nav .profile-details i{
     font-size: 25px;
-    color: rgb(189, 162, 8);
+    color: rgb(7, 189, 119);
   }
   .home-section .home-content{
     position: relative;
@@ -192,14 +200,14 @@
     align-items: center;
     justify-content: center;
     width: calc(100% / 1 - 30px);
-    background:  rgb(189, 162, 8);
-    color: #0879bb;
+    background:  rgb(7, 189, 119);
+    color: #cf0707;
     padding: 15px 14px;
     border-radius: 12px;
-    box-shadow: 0 5px 10px rgb(189, 162, 8);
+    box-shadow: 0 5px 10px rgb(7, 189, 119);
   }
   .overview-boxes .box h2{
-    color: #0879bb;
+    color: #f9f9fa;
   }
   .overview-boxes .box .balance{
     margin-top: 20px;
@@ -240,18 +248,18 @@
     background-color: rgb(192, 188, 188);
 }
 .recent-sales tr:nth-child(odd) {
-    background-color: #fff;
+    background-color: rgb(7, 189, 119);
 }
 
   .recent-sales th{
-      color:#0879bb;
+      color:#be0303;
       font-size: 20px;
       padding: 20px;
-      background-color: rgb(189, 162, 8);
+      background-color: rgb(7, 189, 119);
       width: 1000px;
   }
   .recent-sales td{
-      color:#0879bb;
+      color:#f6fcff;
       font-size: 15px; 
       width: 100px; 
       padding: 8px;
@@ -273,21 +281,21 @@
     margin-left: -0px;
     border-collapse: collapse;
     border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(7, 189, 119, 0.76);
     margin-top: 20px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 .falling th{
-  color:white;
+  color:rgb(192, 2, 2);
       font-size: 20px;
       padding: 20px;
-      background-color: rgb(189, 162, 8);
+      background-color: rgb(7, 189, 119);
       width: 1000px;
 }
 .falling td{
-  color:#0879bb;
+  color:rgb(7, 189, 119);
   font-size: 15px; 
   width: 100px; 
   padding: 8px;

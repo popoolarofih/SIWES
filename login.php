@@ -1,42 +1,83 @@
-<?php 
-session_start();
-require "dbh.inc.php";
+<?php
+   require_once 'includes/header.php';
+use Phppot\Member;
 
-if(isset($_POST['signup-btn'])){
-    $username = $_POST['uid'];
-    $email = $_POST['mail'];
-    $password = $_POST['pwd'];
-    $passwordReapeat = $_POST['pwd-repeat'];
-    if(empty($password) || empty($email) || empty($passwordReapeat)){
-        header("Location:");
-        exit();
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-z0-9]*$/", $username)){
-        header("location:");
-        exit();
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        header("Location:");
-        exit();
-    }elseif (!preg_match("/^[a-zA-z0-9]*$/", $username)){
-        header("Location:");
-        exit();
-    }elseif ($password != $passwordReapeat){
-        header("Location:");
-        exit();
-    }else{
-        $sql = "INSERT INTO users (names,emailUsers, pwdUsers) VALUES(?, ?, ?)";
-        $stmt = mysqli_stmt_init($conn);
-        if (!mysqli_stmt_prepare($stmt, $sql)){
-            header("Location:.../singup.php?error=sqlerror");
-            exit();
-        } else{
-            $hashed = password_hash($password, PASSWORD_DEFAULT);
-            mysqli_stmt_bind_param($stmt, 'sss', $username, $email, $heahed);
-            mysqli_stmt_execute($stmt);
-            header("Location.../login.php");
-            exit();
-        }
-    }
-    }
-    
-
+if (! empty($_POST["login-btn"])) {
+    require_once __DIR__ . '/Model/Member.php';
+    $member = new Member();
+    $loginResult = $member->loginMember();
+}
 ?>
+
+<section class="logins">
+	<div class="phppot-container">
+		<div class="sign-up-container">
+			
+			<div class="signup-align">
+				<form name="login" action="./dash.php" method="post"
+					onsubmit="return loginValidation()">
+					<div class="signup-heading">Login As An Admin</div>
+				<?php if(!empty($loginResult)){?>
+				<div class="error-msg"><?php echo $loginResult;?></div>
+                <?php }?>
+                
+                <div class="login-signup"><span class="already">Not Yet Registered?</span>
+				<a href="user-registration.php">Sign up</a>
+			</div>
+				<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Username<span class="required error" id="username-info"></span>
+							</div>
+							<input class="input-box-330" type="text" name="username"
+								id="username">
+						</div>
+					</div>
+					<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Password<span class="required error" id="login-password-info"></span>
+							</div>
+							<input class="input-box-330" type="password"
+								name="login-password" id="login-password">
+						</div>
+					</div>
+					<div class="row">
+						<input class="btn" type="submit" name="login-btn"
+							id="login-btn" value="Login">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+	<script>
+function loginValidation() {
+	var valid = true;
+	$("#username").removeClass("error-field");
+	$("#password").removeClass("error-field");
+
+	var UserName = $("#username").val();
+	var Password = $('#login-password').val();
+
+	$("#username-info").html("").hide();
+
+	if (UserName.trim() == "") {
+		$("#username-info").html("required.").css("color", "#ee0000").show();
+		$("#username").addClass("error-field");
+		valid = false;
+	}
+	if (Password.trim() == "") {
+		$("#login-password-info").html("required.").css("color", "#ee0000").show();
+		$("#login-password").addClass("error-field");
+		valid = false;
+	}
+	if (valid == false) {
+		$('.error-field').first().focus();
+		valid = false;
+	}
+	return valid;
+}
+</script>

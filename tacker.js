@@ -48,3 +48,4 @@ setInterval(
             pointerT++;
     }, 5000
 );
+

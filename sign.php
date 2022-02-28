@@ -27,7 +27,7 @@ input {
 .container {
   position: relative;
   width: 100%;
-  background-color: #fff;
+  background-color: white;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -75,19 +75,20 @@ form.sign-in-form {
 
 .title {
   font-size: 2.2rem;
-  color: #033894;
+  color: #08df7a;
   margin-bottom: 10px;
 }
 
 .input-field {
   max-width: 380px;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #08df7a;
   margin: 10px 0;
   height: 55px;
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
+  color: #08df7a;
   padding: 0 0.4rem;
   position: relative;
 }
@@ -95,7 +96,7 @@ form.sign-in-form {
 .input-field i {
   text-align: center;
   line-height: 55px;
-  color: #033894;
+  color:rgb(12, 148, 73);
   transition: 0.5s;
   font-size: 1.1rem;
 }
@@ -107,11 +108,11 @@ form.sign-in-form {
   line-height: 1;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #033894;
+  color: white;
 }
 
 .input-field input::placeholder {
-  color: #aaa;
+  color: white;
   font-weight: 500;
 }
 
@@ -132,27 +133,27 @@ form.sign-in-form {
   justify-content: center;
   align-items: center;
   margin: 0 0.45rem;
-  color: rgb(11, 26, 112);
+  color: #08df7a;
   border-radius: 50%;
-  border: 1px solid rgb(148, 4, 148);
+  border: 1px solid rgb(12, 148, 73);
   text-decoration: none;
   font-size: 1.1rem;
   transition: 0.3s;
 }
 
 .social-icon:hover {
-  color: #4481eb;
-  border-color: #1e5ac2;
+  color: #08df7a;
+  border-color:#08df7a;
 }
 
 .btn {
   width: 150px;
-  background-color: #033894;
+  background-color: #08df7a;
   border: none;
   outline: none;
   height: 49px;
   border-radius: 49px;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -161,7 +162,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-  background-color: #e6e21c;
+  background-color: #08df7a;
 }
 .panels-container {
   position: absolute;
@@ -181,7 +182,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #033894 10%, #1ce6d5 100%);
+  background-image: linear-gradient(-45deg, #08df7a 10%, rgb(9, 100, 73) 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -213,7 +214,7 @@ form.sign-in-form {
 }
 
 .panel .content {
-  color: #fff;
+  color: white;
   transition: transform 0.9s ease-in-out;
   transition-delay: 0.6s;
 }
@@ -232,7 +233,7 @@ form.sign-in-form {
 .btn.transparent {
   margin: 0;
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid white;
   width: 130px;
   height: 41px;
   font-weight: 600;
@@ -417,7 +418,7 @@ form.sign-in-form {
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="expense.php" class="sign-in-form">
+          <form action="expense2.php" class="sign-in-form">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -428,7 +429,7 @@ form.sign-in-form {
               <input type="password" placeholder="Password" required />
             </div>
 
-           <a href="./expense.php"> <button class="btn solid">Login</button> </a> 
+           <a href="./expense2.php"> <button class="btn solid">Login</button> </a> 
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">

@@ -120,14 +120,14 @@ function getBalance(){
           </a>
         </li>
         <li>
-          <a href="chat.php">
+          <a href="./chart.js/type.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
            <span class="links_name">Chart Analysis</span>
           </a>
         </li>
         
         <li class="log_out">
-          <a href="expense.php">
+          <a href="./index.php">
             <i class='bx bx-log-out'></i>
            <span class="links_name">Log out</span>
           </a>
@@ -149,6 +149,21 @@ function getBalance(){
         <span class="admin_name">ADMIN</span>
         
         <i class='bx bx-chevron-down'></i>
+        <?php
+$conn = mysqli_connect("localhost", "root", "", "strings") or die("Error : " . mysqli_error($conn));
+$sql = "select * from sign order by id desc limit 1";
+$res = mysqli_query($conn, $sql);
+if(mysqli_num_rows($res) > 0){
+    while($row = mysqli_fetch_array($res)){
+        $name = $row['name'];
+        // $id = $row['id'];
+        // $id = $row['id'];
+        // $id = $row['id'];
+        // $id = $row['id'];
+        echo "<span >".$name."</span>";
+    }
+}
+?>
       </div>
     </nav>
 
@@ -190,6 +205,7 @@ echo "<h2>".$tttt."</h2>";
 
       <div class="sales-boxes">
         <div class="recent-sales box">
+        <span>Income & Expense Table</span>
         <?php
 $select = "select * from expenditure";
 $result = mysqli_query($conn, $select);
@@ -239,6 +255,7 @@ else{
       </div>
   <div class="before-falling">
   <div class="falling">
+  <span>Budget Allocation Table</span>
 <?php
 $select = "select * from budget_allocation";
           $result = mysqli_query($conn, $select);
@@ -266,6 +283,48 @@ $select = "select * from budget_allocation";
                   <td>'.$desc.'</td>
                   <td>'.$amt.'</td>
                   
+                  <td>'.$time.'</td>
+                  </tr>
+                  ';
+              }
+              echo "</table>";
+          }
+          else{
+              echo "<h1>Nothing Here</h1>";
+          }
+          ?>
+          
+</div>
+  </div>
+  <div class="before-falling">
+  <div class="falling">
+  <span>Message Table</span>
+<?php
+$select = "select * from message";
+          $result = mysqli_query($conn, $select);
+          
+          if(mysqli_num_rows($result) > 0){
+              echo "<table>
+              <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Message</th>
+              </tr>
+              ";
+              while($row = mysqli_fetch_array($result)){
+                  $id = $row['Id'];
+                  $name = $row['Name'];
+                  $desc = $row['Email'];
+                  $amt = $row['Number'];
+                  $time = $row['Message'];
+                  echo '
+                  <tr>
+                  <td>'.$id.'</td>
+                  <td>'.$name.'</td>
+                  <td>'.$desc.'</td>
+                  <td>'.$amt.'</td>
                   <td>'.$time.'</td>
                   </tr>
                   ';
